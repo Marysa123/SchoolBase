@@ -2,10 +2,14 @@ package com.example.schoolbase;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.widget.ImageView;
 
 import com.airbnb.lottie.LottieAnimationView;
+
+import java.util.concurrent.TimeUnit;
 
 public class IntroductoryActivity extends AppCompatActivity {
 
@@ -24,13 +28,17 @@ public class IntroductoryActivity extends AppCompatActivity {
         splash_images = findViewById(R.id.img);
         lottieAnimationView = findViewById(R.id.lottie);
 
-        splash_images.animate().translationX(1400).setDuration(2000).setStartDelay(4000);
-        logo.animate().translationX(1400).setDuration(2000).setStartDelay(4000);
-        text_bot.animate().translationX(1400).setDuration(2000).setStartDelay(4000);
-        background.animate().translationX(1400).setDuration(2000).setStartDelay(4000);
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(IntroductoryActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        }, 4000);//Ставите сколько сек, 1000 = 1с.
 
-        lottieAnimationView.animate().setDuration(4000).setStartDelay(0);
-        lottieAnimationView.animate().translationX(1400).setDuration(2000).setStartDelay(4000);
+
 
 
     }

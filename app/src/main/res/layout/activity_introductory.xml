@@ -69,5 +69,4 @@
         app:lottie_rawRes="@raw/animation" />
 
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
