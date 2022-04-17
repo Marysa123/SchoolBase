@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.schoolbase.database.DBHandler;
+
 public class UpdateActivity extends AppCompatActivity {
 
     EditText id_input,FIO_input,Data_input,Class_input,Intelect_input,isscustvo_input,sport_input;
@@ -30,13 +32,29 @@ public class UpdateActivity extends AppCompatActivity {
         sport_input = findViewById(R.id.Sport_input);
         btnUpdate = findViewById(R.id.button_updateinfo);
 
+
+
+        getIntentDate();
+
         btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                id = id_input.getText().toString();
+                fio = FIO_input.getText().toString();
+                dataros = Data_input.getText().toString();
+                class_ = Class_input.getText().toString();
+                intelect = Intelect_input.getText().toString();
+                iscustvo = isscustvo_input.getText().toString();
+                sport = sport_input.getText().toString();
+
+
+                DBHandler dbHandler = new DBHandler(UpdateActivity.this);
+                dbHandler.updateData(id,fio,dataros,class_,intelect,iscustvo,sport);
             }
         });
-        getIntentDate();
+
+
     }
         void getIntentDate(){
             if (getIntent().hasExtra("id") && getIntent().hasExtra("fio") &&

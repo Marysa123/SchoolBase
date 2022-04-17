@@ -1,6 +1,7 @@
 package com.example.schoolbase;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -18,6 +19,14 @@ import java.util.ArrayList;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
     private Context context;
     private ArrayList Id,FIO,DataRos,Class,Intelect,Isscustvo,Sport;
+
+    Activity activity;
+
+    public MyAdapter(Activity activity){
+
+    }
+
+
 
 
     public MyAdapter(Context context,ArrayList id,  ArrayList fio, ArrayList dataRos, ArrayList aClass, ArrayList intelect, ArrayList isscustvo, ArrayList sport) {
@@ -58,6 +67,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
                 intent.putExtra("intelect",String.valueOf(Intelect.get(position)));
                 intent.putExtra("iscustvo",String.valueOf(Isscustvo.get(position)));
                 intent.putExtra("sport",String.valueOf(Sport.get(position)));
+
                 context.startActivity(intent);
             }
         });

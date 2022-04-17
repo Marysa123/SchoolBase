@@ -33,12 +33,15 @@ public class ArrayListPage extends AppCompatActivity {
         intelect = new ArrayList<>();
         iscusstvo = new ArrayList<>();
         sport = new ArrayList<>();
-        adapter = new MyAdapter(this,id,Fio,dataros,class_,intelect,iscusstvo,sport);
+        adapter = new MyAdapter( this ,id,Fio,dataros,class_,intelect,iscusstvo,sport);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         displaydata();
     }
+
+
+
 
     @SuppressLint("Range")
     private void displaydata() {
@@ -61,5 +64,8 @@ public class ArrayListPage extends AppCompatActivity {
                     } while (cursor.moveToNext());
                 }
         }
+
+
     }
+
 }
