@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">SchoolBase</string>
-    <string name="enter_username">Enter Username</string>
-    <string name="enter_password">Enter Password</string>
-    <string name="remember_me">Remember me</string>
-    <string name="forget_password">Forget Password</string>
-    <string name="create_account">Create Account</string>
+    <string name="enter_username">Введите логин</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="remember_me">Запомнить меня</string>
+    <string name="forget_password">Забыли пароль?</string>
+    <string name="create_account">Создать аккаунт</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
