@@ -131,7 +131,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Register"
-                android:visibility="invisible"
                 android:background="@color/black"
                 android:textColor="@color/white"
                 android:layout_marginTop="20dp"
