@@ -17,9 +17,5 @@ public class User {
         public static final String COL_Isscustvo = "isscustvo";
         public static final String COL_Sport = "sport";
 
-
-
-
-
     }
 }

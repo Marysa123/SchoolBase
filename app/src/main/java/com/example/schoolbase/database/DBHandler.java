@@ -1,6 +1,7 @@
 package com.example.schoolbase.database;
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -54,10 +55,19 @@ public class DBHandler extends SQLiteOpenHelper {
             return false;
         }
     }
+    public Cursor getdata(){
+        String query = "SELECT * FROM " + User.UserDetails.TABLE_NAME;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = null;
+        if (db != null){
+           cursor = db.rawQuery(query,null);
+        }
+        return cursor;
+    }
 
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
+        sqLiteDatabase.execSQL("drop Table if exists user");
     }
 }

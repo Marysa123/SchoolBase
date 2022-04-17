@@ -72,6 +72,8 @@ public class MainPageApplication extends AppCompatActivity implements Navigation
             case R.id.nav_home:
                 break;
             case R.id.nav_add:
+
+
                 Intent intent = new Intent(MainPageApplication.this,addYcheniki.class);
                 startActivity(intent);
                 break;
