@@ -144,8 +144,8 @@
 
             android:id="@+id/Intelect"
             android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="330dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="230dp"
             android:fontFamily="@font/muli"
             android:inputType="textMultiLine"
             android:textColor="@color/black"
@@ -172,8 +172,8 @@
 
             android:id="@+id/Isskustvo"
             android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="500dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="400dp"
             android:fontFamily="@font/muli"
             android:inputType="textMultiLine"
             android:textColor="@color/black"
@@ -200,8 +200,8 @@
 
             android:id="@+id/Sport"
             android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="670dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="570dp"
             android:fontFamily="@font/muli"
             android:inputType="textMultiLine"
             android:textColor="@color/black"

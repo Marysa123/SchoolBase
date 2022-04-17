@@ -29,9 +29,6 @@ public class addYcheniki extends AppCompatActivity {
 
         dbHandler = new DBHandler(this);
 
-
-
-
         findViewById(R.id.button_addinfo).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,13 +47,7 @@ public class addYcheniki extends AppCompatActivity {
                 else{
                     Toast.makeText(addYcheniki.this, "Fail", Toast.LENGTH_SHORT).show();
                 }
-
-
-
-
             }
         });
-
-
     }
 }

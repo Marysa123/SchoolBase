@@ -6,7 +6,8 @@
     app:cardElevation="12dp"
     app:cardCornerRadius="16dp"
     android:layout_margin="16dp"
-    android:backgroundTint="#efefef">
+    android:backgroundTint="#efefef"
+    android:id="@+id/MainLayout">
 
 
     <LinearLayout
@@ -15,7 +16,7 @@
         android:layout_margin="16dp"
         android:orientation="vertical">
 
-        <LinearLayout
+        <TableLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -24,20 +25,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FIO: "
+                android:text="ФИО: "
+                android:fontFamily="@font/poppins_black"
                 android:textSize="24dp"
                 android:textColor="@color/black" />
             <TextView
                 android:id="@+id/fio_lable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=""
                 android:textSize="24dp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:inputType="textMultiLine"
+                />
 
 
-        </LinearLayout>
-        <LinearLayout
+        </TableLayout>
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -46,26 +49,31 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Data Roshdenia:"
+                android:text="Дата рождения:"
                 android:textSize="24dp"
+                android:fontFamily="@font/poppins_black"
+
                 android:textColor="@color/black" />
             <TextView
                 android:id="@+id/dataros_lable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="24dp"
-                android:textColor="@color/black" />
-        </LinearLayout>
-        <LinearLayout
+                android:textColor="@color/black"
+                android:inputType="textMultiLine"
+                />
+        </TableLayout>
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:orientation="horizontal">
 
             <TextView
+                android:fontFamily="@font/poppins_black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Class:"
+                android:text="Класс:"
                 android:textSize="24dp"
                 android:textColor="@color/black" />
             <TextView
@@ -73,20 +81,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="24dp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:inputType="textMultiLine"
+                />
 
 
-        </LinearLayout>
-        <LinearLayout
+        </TableLayout>
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
+                android:fontFamily="@font/poppins_black"
                 android:layout_height="wrap_content"
-                android:text="Intelect:"
+                android:text="Интелектуальная одаренность:"
                 android:textSize="24dp"
                 android:textColor="@color/black" />
             <TextView
@@ -94,23 +105,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="24dp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:inputType="textMultiLine"
+                />
 
 
-        </LinearLayout>
-        <LinearLayout
+        </TableLayout>
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:fontFamily="@font/poppins_black"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="Iscusstvo"
+                android:text="Творчесская одарённость:"
                 android:textSize="24dp"
                 android:textColor="@color/black" />
+
             <TextView
+                android:inputType="textMultiLine"
                 android:id="@+id/isccusstvo_lable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -118,17 +134,18 @@
                 android:textColor="@color/black" />
 
 
-        </LinearLayout>
-        <LinearLayout
+        </TableLayout>
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:fontFamily="@font/poppins_black"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="Sport"
+                android:text="Спортивная одарённость:"
                 android:textSize="24dp"
                 android:textColor="@color/black" />
             <TextView
@@ -136,8 +153,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="24dp"
-                android:textColor="@color/black" />
-        </LinearLayout>
+                android:textColor="@color/black"
+                android:inputType="textMultiLine"
+                />
+        </TableLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -147,15 +166,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Id"
+                android:text="Id:"
                 android:textSize="24dp"
+                android:fontFamily="@font/poppins_black"
                 android:textColor="@color/black" />
             <TextView
                 android:id="@+id/id_lable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="24dp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:inputType="textMultiLine"
+                />
         </LinearLayout>
 
     </LinearLayout>

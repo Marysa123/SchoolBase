@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity"
+    android:background="@drawable/background_splashscreen">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/muli_regular"
+        android:text="Изменение данных об учащимся"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="950dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/background_addpage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <TextView
+                android:layout_width="204dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/muli_regular"
+                android:text="ФИО*:"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="textStart"
+                android:textColor="#948A8A"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/Fio_input"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/muli"
+                android:layout_marginStart="25dp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+
+            <TextView
+                android:layout_width="204dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/muli_regular"
+                android:text="Дата рождения*:"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="80dp"
+                android:textAlignment="textStart"
+                android:textColor="#948A8A"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/DataRosh_input"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/muli"
+                android:layout_marginStart="25dp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.google.android.material.textfield.TextInputEditText>
+            <TextView
+                android:layout_width="204dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/muli_regular"
+                android:text="Класс*:"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="160dp"
+                android:textAlignment="textStart"
+                android:textColor="#948A8A"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/Class_input"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="180dp"
+                android:fontFamily="@font/muli"
+                android:layout_marginStart="25dp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/poppins_black"
+                android:text="Интелектуальная одаренность"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="240dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/Intelect_input"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="230dp"
+                android:fontFamily="@font/muli"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/poppins_black"
+                android:text="Искусство/Творческая одаренность"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="390dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/Isskustvo_input"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="400dp"
+                android:fontFamily="@font/muli"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/poppins_black"
+                android:text="Спортивная одаренность"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="560dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/Sport_input"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="570dp"
+                android:fontFamily="@font/muli"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+
+            <TextView
+                android:layout_width="204dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/muli_regular"
+                android:text="Id*:"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="750dp"
+                android:textAlignment="textStart"
+                android:textColor="#948A8A"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/id_input"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="770dp"
+                android:fontFamily="@font/muli"
+                android:layout_marginStart="25dp"
+                android:inputType="number"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <Button
+                android:id="@+id/button_updateinfo"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/gradient_button"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Изменить"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="830dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

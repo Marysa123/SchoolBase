@@ -24,6 +24,7 @@ public class ArrayListPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_array_list_page);
+        recyclerView = findViewById(R.id.recyclesview);
         dbHandler = new DBHandler(this);
         id = new ArrayList<>();
         Fio = new ArrayList<>();
@@ -32,7 +33,6 @@ public class ArrayListPage extends AppCompatActivity {
         intelect = new ArrayList<>();
         iscusstvo = new ArrayList<>();
         sport = new ArrayList<>();
-        recyclerView = findViewById(R.id.recyclesview);
         adapter = new MyAdapter(this,id,Fio,dataros,class_,intelect,iscusstvo,sport);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -49,7 +49,7 @@ public class ArrayListPage extends AppCompatActivity {
         }
         else{
             if (cursor != null)
-                if (cursor .moveToFirst()) {
+                if (cursor.moveToFirst()) {
                     do {
                         id.add(cursor.getString(cursor.getColumnIndex(User.UserDetails.COL_ID)));
                         Fio.add(cursor.getString(cursor.getColumnIndex(User.UserDetails.COL_FIO)));
@@ -58,11 +58,8 @@ public class ArrayListPage extends AppCompatActivity {
                         intelect.add(cursor.getString(cursor.getColumnIndex(User.UserDetails.COL_Intelect)));
                         iscusstvo.add(cursor.getString(cursor.getColumnIndex(User.UserDetails.COL_Isscustvo)));
                         sport.add(cursor.getString(cursor.getColumnIndex(User.UserDetails.COL_Sport)));;
-                    } while (cursor .moveToNext());
+                    } while (cursor.moveToNext());
                 }
         }
-
-
     }
-
 }
